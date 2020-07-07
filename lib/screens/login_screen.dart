@@ -35,6 +35,51 @@ class LoginScreen extends StatelessWidget {
                     bgColor: Color(0xffec1c40),
                     onPressed: () => {},
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Row(
+                      children: <Widget>[
+                        FlatButton(
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                'assets/images/fb.png',
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 5),
+                                child: Text(
+                                  "LOGIN WTIH FACEBOOK",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 13),
+                                ),
+                              )
+                            ],
+                          ),
+                          onPressed: () {},
+                        ),
+                        FlatButton(
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                'assets/images/google.png',
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 5),
+                                child: Text(
+                                  "LOGIN WTIH GOOGLE",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 13),
+                                ),
+                              )
+                            ],
+                          ),
+                          onPressed: () {},
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
