@@ -38,6 +38,7 @@ class LoginScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         FlatButton(
                           child: Row(
@@ -76,10 +77,40 @@ class LoginScreen extends StatelessWidget {
                             ],
                           ),
                           onPressed: () {},
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        FlatButton(
+                          onPressed: () {},
+                          child: RichText(
+                            text: TextSpan(
+                              text: 'New User? ',
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 15,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: 'Create an account',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xffec1c40),
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         )
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
